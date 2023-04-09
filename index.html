@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Arekta Ecommerce</title>
+ <link rel="stylesheet" href="css/style.css">
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+ 
+ <!-- NAV BAR CONTENT -->
+ 
+<div class="container">
+ 
+ 
+ <header>
+  <div class="navbar">
+   <div class="logo"><a href="#">AREKTA ECOMMERCE</a></div>
+   <ul class="links">
+    <li><a href="#">Home</a> </li>
+    <li><a href="https://naim.vercel.app">About Me</a></li>
+    <li><a href="https://www.youtube.com/@LevelZero13">Channel</a></li>
+    <li><a href="https://t.me/Naim13">Contact Me</a></li>
+   </ul>
+   <a href="https://naim.vercel.app" class="action_btn">Get Started</a>
+   <div class="toggle_btn">
+    <i class="fa-solid fa-bars"></i>
+ 
+   </div>
+  </div>
+ 
+ 
+ 
+ <div class="dropdown_menu">
+  <li><a href="#">Home</a> </li>
+  <li><a href="https://naim.vercel.app">About Me</a></li>
+  <li><a href="https://www.youtube.com/LevelZero13">Channel</a></li>
+  <li><a href="https://t.me/Naim13">Contact Me</a></li>
+   <div class="searcharea">
+    <div class="searchbox">
+     <i class="fas fa-search"></i>
+     <input type="search" placeholder="Search">
+    </div>
+ </div>
+ </header>
+ <script>
+  const toggleBtn = document.querySelector('.toggle_btn')
+  const toggleBtnIcon = document.querySelector('.toggle_btn i')
+  const dropDownMenu = document.querySelector('.dropdown_menu')
+  toggleBtn.onclick = function() {
+   dropDownMenu.classList.toggle('open')
+   const isOpen = dropDownMenu.classList.contains('open')
+ 
+   toggleBtnIcon.classList = isOpen ?
+    'fa-solid fa-xmark' :
+    'fa-solid fa-bars'
+  }
+ </script>
+ 
+ <!-- END NAVBAR CONTENT -->
+ 
+<!-- <div class="logo">
+  <a href="#">AREKTA ECOMMERCE</a>
+ </div>
+ 
+
+
+ </div>-->
+ 
+ <!-- START MAIN DIV HEADER CONTENT -->
+ 
+ <div class="section1">
+  <div class="upimg">
+   <img src="/img/undraw_web_shopping_re_owap.svg" alt="">
+   <div class="uptext">
+    <h1>Su<span class="mm">mm</span>er</h1>
+    <h2>Collec<span class="mm">tion</span></h2>
+    <button class="upbtn">BUY NOW</button>
+   </div>
+  </div>
+ </div>
+ <div class="iconArea">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-youtube"></i></a>
+ </div>
+</div>
+
+<!-- END MAIN HEADER DIV CONTENT -->
+
+<!-- START PRODUCT AREA -->
+
+<section2>
+ <div class="productarea">
+  <h3>New <span class="mm">Arrival</span> Collections</h3>
+  <div class="broduct">
+   
+   <div class="productbox">
+     <img src="/img/undraw_jewelry_iima.svg" alt="">
+      <h4>Girlfriend</h4>
+      <a class="price" href="#"><del>5000 BDT</del>&nbsp; <span class="free">FREE</span></a>
+    <a href="#" class="buybtn">Buy Now</a>
+   </div>
+   <div class="productbox">
+    <img src="/img/undraw_dog_c7i6.svg" alt="">
+      <h4>Elakar Kutta</h4>
+    <a class="price" href="#"><del>3870 BDT</del>&nbsp <span class="free">FREE</span></a>
+    <a href="#" class="buybtn">Buy Now</a>
+   </div>
+   <div class="productbox">
+    <img src="/img/undraw_pet_adoption_-2-qkw.svg" alt="">
+      <h4>Pet Adoption</h4>
+    <a class="price" href="#"><del>712 </del>&nbsp; <span class="free">201</span></a>
+    <a href="#" class="buybtn">Buy Now</a>
+   </div>
+   <div class="productbox">
+    <img src="/img/undraw_beer_xg5f.svg" alt="">
+      <h4>Bangla মদ</h4>
+    <a class="price" href="#"><del>3190 BDT</del>&nbsp; <span class="free"> 15% Discount </span></a>
+    <a href="#" class="buybtn">Buy Now</a>
+   </div>
+  </div>
+ </div>
+</section2>
+
+<!-- END PRODUCT AREA -->
+
+<!-- START OUR GOAL AREA -->
+
+<section4>
+ <div class="ourcompany">
+  <h3>Our <span class="mm">Goal</span></h3>
+  <div class="companycard">
+  <img src="/img/undraw_counting_stars_re_smvv.svg" alt="">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ipsa praesentium cum exercitationem ad, hic.</p>
+  </div>
+ </div>
+</section4>
+
+<!-- END OUR GOAL AREA -->
+
+<!-- START OUR TEAM AREA -->
+
+<section5>
+ <div class="teambox">
+  <h3>Our <span class="mm">Team</span></h3>
+  <div class="ourteam">
+  <img class="teamjpg" src="img/naim.jpg" alt="">
+  <h2><span>Naim</span></h2>
+  <h5>Web Designer & Developer</h5>
+ <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ipsa praesentium cum exercitationem ad, Lorem ipsum dolor sit amet, consectetur adipisicing. </q></p>
+  </div>
+ </div>
+</section5>
+
+<!--END OUR TEAM AREA -->
+
+<!-- START NOTIFICATION ARE -->
+
+
+<section class="notification">
+ <h1>Subscribe For New Product Notification</h1>
+ <div class="notificationinput">
+   <input type="email" placeholder="Enter Your Email">
+   <button>Send</button>
+ </div>
+</section>
+
+<!-- END NOTIFICATION AREA -->
+
+<!-- START FOOTER AREA -->
+
+<footer>
+ <h3>© Arekta Ecommerce <br>All Rights Reserved</h3>
+</footer>
+
+<!-- END FOOTER AREA -->
+
+</body>
+
+</html>
