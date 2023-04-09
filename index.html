@@ -6,11 +6,11 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Arekta Ecommerce</title>
  <link rel="stylesheet" href="css/arekta-styleV1.0.css">
- <script src="js/arekta-styleV1.0.js"></script>
   <script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/arekta-styleV1.0.js"></script>
 </head>
 
 <body>
@@ -50,20 +50,7 @@
     </div>
  </div>
  </header>
- <script>
-  const toggleBtn = document.querySelector('.toggle_btn')
-  const toggleBtnIcon = document.querySelector('.toggle_btn i')
-  const dropDownMenu = document.querySelector('.dropdown_menu')
-  toggleBtn.onclick = function() {
-   dropDownMenu.classList.toggle('open')
-   const isOpen = dropDownMenu.classList.contains('open')
- 
-   toggleBtnIcon.classList = isOpen ?
-    'fa-solid fa-xmark' :
-    'fa-solid fa-bars'
-  }
- </script>
- 
+
  <!-- END NAVBAR CONTENT -->
  
 <!-- <div class="logo">
@@ -82,7 +69,7 @@
    <div class="uptext">
     <h1>Su<span class="mm">mm</span>er</h1>
     <h2>Collec<span class="mm">tion</span></h2>
-    <button class="upbtn">BUY NOW</button>
+    <button class="upbtn" onclick="mainbtn()">BUY NOW</button>
    </div>
   </div>
  </div>
@@ -106,26 +93,26 @@
    <div class="productbox">
      <img src="/img/undraw_jewelry_iima.svg" alt="">
       <h4>Girlfriend</h4>
-      <a class="price" href="#"><del>5000 BDT</del>&nbsp; <span class="free">FREE</span></a>
-    <a href="#" class="buybtn">Buy Now</a>
+      <a class="price" href=""><del>5000 BDT</del>&nbsp; <span class="free">FREE</span></a>
+    <a href="" class="buybtn" onclick="gfbtn()">Buy Now</a>
    </div>
    <div class="productbox">
     <img src="/img/undraw_dog_c7i6.svg" alt="">
       <h4>Elakar Kutta</h4>
-    <a class="price" href="#"><del>3870 BDT</del>&nbsp <span class="free">FREE</span></a>
-    <a href="#" class="buybtn">Buy Now</a>
+    <a class="price" href=""><del>3870 BDT</del>&nbsp <span class="free">FREE</span></a>
+    <a href="" class="buybtn" onclick="kuttabtn()">Buy Now</a>
    </div>
    <div class="productbox">
     <img src="/img/undraw_pet_adoption_-2-qkw.svg" alt="">
       <h4>Pet Adoption</h4>
-    <a class="price" href="#"><del>712 </del>&nbsp; <span class="free">201</span></a>
-    <a href="#" class="buybtn">Buy Now</a>
+    <a class="price" href=""><del>712 </del>&nbsp; <span class="free">201</span></a>
+    <a href="" class="buybtn" onclick="catbtn()">Buy Now</a>
    </div>
    <div class="productbox">
     <img src="/img/undraw_beer_xg5f.svg" alt="">
       <h4>Bangla মদ</h4>
-    <a class="price" href="#"><del>3190 BDT</del>&nbsp; <span class="free"> 15% Discount </span></a>
-    <a href="#" class="buybtn">Buy Now</a>
+    <a class="price" href=""><del>3190 BDT</del>&nbsp; <span class="free"> 15% Discount </span></a>
+    <a href="" class="buybtn" onclick="modbtn()">Buy Now</a>
    </div>
   </div>
  </div>
@@ -171,7 +158,7 @@
  <h1>Subscribe For New Product Notification</h1>
  <div class="notificationinput">
    <input type="email" placeholder="Enter Your Email">
-   <button>Send</button>
+   <button onclick="emailbtn()">Send</button>
  </div>
 </section>
 
