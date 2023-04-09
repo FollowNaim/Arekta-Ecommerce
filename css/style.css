@@ -517,6 +517,21 @@ navbar .logo a:hover{
 .teambox h5{
  margin-top: -15px;
 }
+.ourteam button a{
+ text-decoration: none;
+ color: white;
+}
+.ourteam button{
+ margin-bottom: 20px;
+ width: 115px;
+ height: 40px;
+ padding: 10px;
+ background: linear-gradient(90deg, rgba(207,19,110,1) 0%, rgba(178,18,69,1) 35%, rgba(24,63,93,1) 53%, rgba(17,32,12,1) 100%);
+ border: none;
+ border-radius: 10px;
+ box-shadow: 2px 2px 20px rgba(167,158,245,0.9);
+ font-weight: bold;
+}
 
 /* Subscribe BUTTON */
 .notification{
@@ -553,7 +568,8 @@ navbar .logo a:hover{
 .notificationinput button{
  background-color: #202020;
  color: white;
- border-radius: 20px;
+ border-radius: 15px;
+ padding: 20px;
  font-size: 1rem;
  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
  text-transform: uppercase;
